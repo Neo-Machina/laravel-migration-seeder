@@ -10,6 +10,7 @@
                     <div>Holiday type: {{ $travel->holiday_type }} </div>
                     <div>Hotel: {{ $travel->hotel }}</div>
                     <div>Price: {{ $travel->price }}</div>
+                    <div>Duration: {{ $travel->duration }} hours</div>
                     <br>
                 </div>
             </div>

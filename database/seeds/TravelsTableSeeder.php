@@ -28,6 +28,7 @@ class TravelsTableSeeder extends Seeder
             $new_travel->hotel =  $faker->lexify();
             $new_travel->price = $faker->randomFloat(2, 50, 9999);
             $new_travel->is_available = rand(0, 1);
+            $new_travel->duration = $faker->numerify('from # to #');
             // Salvare la riga
             $new_travel->save();
         }

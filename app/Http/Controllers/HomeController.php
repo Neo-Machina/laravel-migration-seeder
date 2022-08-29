@@ -8,7 +8,7 @@ use App\Travel;
 class HomeController extends Controller
 {
     public function index() {
-        $travels = Travel::all();
+        $travels = Travel::where('id', '>', 9)->get();
 
         $data = [
             'travels' => $travels

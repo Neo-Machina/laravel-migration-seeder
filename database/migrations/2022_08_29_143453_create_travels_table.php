@@ -16,7 +16,6 @@ class CreateTravelsTable extends Migration
         Schema::create('travels', function (Blueprint $table) {
             $table->id();
             $table->string('holiday_type', 30);
-            $table->dateTimeTz('duration', 0);
             $table->string('hotel', 50);
             $table->float('price', 8, 2);
             $table->tinyInteger('is_available')->unsigned()->default(1);
